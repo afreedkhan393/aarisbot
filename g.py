@@ -14,9 +14,9 @@ import subprocess
 
 loop = asyncio.get_event_loop()
 
-TOKEN = '7390699440:AAHJcbhKoL6QN4tjbCfrilQowAwka_eSCBE' #Enter_Bot_Token_within_the_colons
+TOKEN = '8216732171:AAHjZXkLQFbhgoHlRPqygsBNklGgttIK2u8' #Enter_Bot_Token_within_the_colons
 MONGO_URI = 'mongodb+srv://Bishal:Bishal@bishal.dffybpx.mongodb.net/?retryWrites=true&w=majority&appName=Bishal'
-FORWARD_CHANNEL_ID = -1001987596149   
+FORWARD_CHANNEL_ID = -1002923780864   
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
@@ -232,4 +232,5 @@ if __name__ == "__main__":
         except Exception as e:
             logging.error(f"An error occurred while polling: {e}")
         logging.info(f"Waiting for {REQUEST_INTERVAL} seconds before the next request...")
+
         time.sleep(REQUEST_INTERVAL)
